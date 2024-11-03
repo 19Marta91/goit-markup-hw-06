@@ -9,7 +9,6 @@ body {
 }
 
 
-
 ul, ol {
     list-style-type: none;
     margin: 0;
@@ -56,21 +55,21 @@ button {
     padding: 0 16px;
     margin: 0 auto;
     }
-      
 
     @media screen and (min-width: 768px) {
-        .container {
-        max-width: 768px;
+        .container.header-container {
+            max-width: 768px;
         }
     }
-
+    
     @media screen and (min-width: 1158px) {
-    .container {
-    max-width: 1158px;
-    padding: 0 15px;
+        .container.header-container {
+            max-width: 1158px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
-    }
-
+      
     /*---------header----------*/
     .page-header {
         border-bottom: 1px solid #e7e9fc;
@@ -124,6 +123,8 @@ button {
 
               
 @media screen and (min-width: 768px) {
+
+   
     .burger-btn {
       display: none;
     }
@@ -398,7 +399,7 @@ button {
             background-color: #2e2f42;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                  rgba(46, 47, 66, 0.7)), 
-                 url("../images/peopleoffice.jpg");
+                 url("../images/bgmob.jpg");
                 background-color: rgba(46, 47, 66, 0.7);
                 max-width: 320px;
                 min-height: 432px;
@@ -456,11 +457,12 @@ button {
     .solution {
             max-width: 768px;
             min-height: 432px;
-            padding: 112px 0px 112px 0px;
+            padding: 188px 0px 188px 0px;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                             rgba(46, 47, 66, 0.7)),
                         url("../images/peopleoffice.jpg");
                 }
+
     .main-title {
             max-width: 496px;
             margin-bottom: 36px;
@@ -470,14 +472,14 @@ button {
             }
 
 
-            @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+     @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
                 .solution {
                     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                                              rgba(46, 47, 66, 0.7)),
-                                    url("../images/peopleoffice.jpg");
+                                    url("../images/bgdestop.jpg");
                             }
                         }
-            @media screen and (min-width: 1158px) {
+     @media screen and (min-width: 1158px) {
                 .solution {
                     max-width: 1440px;
                     padding: 188px 0;
@@ -553,7 +555,7 @@ color: #434455;
 
     @media screen and (min-width: 1158px) {
         .solution {
-                padding: 120px 0;
+                padding: 188px 0;
             }
         
         .benefits-list {
@@ -720,18 +722,21 @@ color: #434455;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
     }
-    .porfolio-title {
-    margin-bottom: 72px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    text-transform: capitalize;
+
+    .our-portfolio-title {
+        margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        text-transform: capitalize;
+        
     }
+
     .portfolio-list {
         display: flex;
         flex-direction: column;
@@ -829,7 +834,7 @@ color: #434455;
         padding: 96px 0;
         }
 
-    .container-footer {
+    .container.container-footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1047,7 +1052,7 @@ color: #434455;
                     padding-bottom: 100px;
                                 }
            
-            .container-footer {
+            .container.container-footer {
                 justify-content: center;
                 gap: 0px;
                 flex-wrap: nowrap;
