@@ -394,15 +394,15 @@ button {
      .menu-social-list-icon {
         fill: #ffffff;
      }
+
      .solution {
-                    padding: 72px 0px 72px 0px;
-            background-color: #2e2f42;
+                padding: 72px 0px 72px 0px;
+                background-color: #2e2f42;
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                  rgba(46, 47, 66, 0.7)), 
                  url("../images/bgmob.jpg");
                 background-color: rgba(46, 47, 66, 0.7);
                 max-width: 320px;
-                min-height: 432px;
                 margin: 0 auto;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -412,7 +412,7 @@ button {
         .solution {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url("../images/peopleoffice.jpg");
+                url("../images/bgdestop.jpg");
         }
     }
 
@@ -456,8 +456,7 @@ button {
 @media screen and (min-width: 768px) {
     .solution {
             max-width: 768px;
-            min-height: 432px;
-            padding: 188px 0px 188px 0px;
+            padding: 112px 0px 112px 0px;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                             rgba(46, 47, 66, 0.7)),
                         url("../images/peopleoffice.jpg");
@@ -536,7 +535,11 @@ color: #434455;
 
 @media screen and (min-width: 768px) {
            
-    
+    .container.benefits-object {
+        max-width: 768px;
+        height: 100%;
+    }
+
     .benefits-list {
                 column-gap: 24px;
                 row-gap: 72px;
@@ -808,6 +811,9 @@ color: #434455;
         .portfolio-list-item {
             flex-basis: calc((100% - 24px)/2);
         }
+        .container.porfolio-container {
+            max-width: 768px;
+        }
     }
 
     @media screen and (min-width: 1158px) {
@@ -837,9 +843,7 @@ color: #434455;
     .container.container-footer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 72px;
+        gap: 72px 24px;
         padding-left: 0;
     }
     
